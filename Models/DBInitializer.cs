@@ -42,11 +42,11 @@ namespace StoreAppWF.Models
         private static List<UserPermission> GetUserPermissions()
         {
             var userpermissions = new List<UserPermission> {
-                new UserPermission {UserID=1,PermissionID=2},
-                new UserPermission {UserID=1,PermissionID=3},
-                new UserPermission {UserID=2,PermissionID=1},
-                new UserPermission {UserID=3,PermissionID=2},
-                new UserPermission {UserID=4,PermissionID=2},
+                new UserPermission {UserPermissionID=1,UserID=1,PermissionID=2},
+                new UserPermission {UserPermissionID=2,UserID=1,PermissionID=3},
+                new UserPermission {UserPermissionID=3,UserID=2,PermissionID=1},
+                new UserPermission {UserPermissionID=4,UserID=3,PermissionID=2},
+                new UserPermission {UserPermissionID=5,UserID=4,PermissionID=2},
             };
 
             return userpermissions;

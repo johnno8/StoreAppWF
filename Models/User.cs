@@ -18,6 +18,6 @@ namespace StoreAppWF.Models
         [Required]
         [StringLength(50, ErrorMessage = "Nationality cannot be longer than 150 characters.")]
         public string Nationality { get; set; }
-        public ICollection<UserPermission> UserPermissions { get; set; }
+        public virtual ICollection<UserPermission> UserPermissions { get; set; }
     }
 }

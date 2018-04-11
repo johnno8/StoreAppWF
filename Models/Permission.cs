@@ -16,7 +16,7 @@ namespace StoreAppWF.Models
         [StringLength(150, ErrorMessage = "Description cannot be longer than 150 characters.")]
         public string Description { get; set; }
 
-        public ICollection<UserPermission> UserPermissions { get; set; }
-        //public virtual ICollection<UserPermission> UserPermissions { get; set; }
+        //public ICollection<UserPermission> UserPermissions { get; set; }
+        public virtual ICollection<UserPermission> UserPermissions { get; set; }
     }
 }
