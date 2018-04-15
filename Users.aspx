@@ -9,6 +9,15 @@
             <asp:DynamicField DataField="Name" />
             <asp:DynamicField DataField="Address" />
             <asp:DynamicField DataField="Nationality" />
+            <asp:TemplateField HeaderText="Permissions">
+                <ItemTemplate>
+                    <asp:GridView ID="upGrid" runat="server" AutoGenerateColumns="False" DataKeyNames="UserID" ItemType="StoreAppWF.Models.UserPermission" SelectMethod="upGrid_GetData">
+                        <Columns>
+                            <asp:DynamicField DataField="Title" />
+                         </columns>
+                    </asp:gridview>
+                </itemtemplate>
+            </asp:templatefield> 
         </Columns>
     </asp:GridView>
 </asp:Content>
